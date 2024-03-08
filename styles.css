@@ -31,10 +31,61 @@ ol,ul{
 
 }
 
+#container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+}
+
+#introduction{
+    grid-column: 1 / 9;
+    background-color: black;
+    text-align: center;
+}
+
+#introduction h1 {
+    color: white;
+}
+
+#introduction a{
+    text-decoration:none;
+}
+
+#introduction p{
+    padding-top: 16px;
+    color: white;
+}
+
+#traits{
+    grid-row: 4/4;
+    grid-column: 1 / 4
+}
+
+#adjectives{
+    grid-row: 4/4;
+    grid-column: 4 / 9;
+}
 #image {
     overflow: hidden;
+    grid-row: 5/ 9;
+    grid-column: 5/9;
 }
 
 #image img{
     background-size: contain;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+
+.box2{
+    display: grid;
+    grid-column-start:0;
+    grid-column-end: 2
 }
